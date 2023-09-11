@@ -1,4 +1,6 @@
-﻿namespace Ordering.API.Infrastructure.IntegrationEventMigrations
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace Ordering.API.Infrastructure.IntegrationEventMigrations
 {
     public partial class IntegrationEventInitial : Migration
     {

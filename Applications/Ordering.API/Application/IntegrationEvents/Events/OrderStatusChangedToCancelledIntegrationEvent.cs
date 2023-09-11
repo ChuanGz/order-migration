@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Application.IntegrationEvents.Events;
+﻿namespace Ordering.API.Application.IntegrationEvents.Events;
 
 public record OrderStatusChangedToCancelledIntegrationEvent : IntegrationEvent
 {

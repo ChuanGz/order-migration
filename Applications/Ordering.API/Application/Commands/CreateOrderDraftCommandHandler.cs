@@ -1,6 +1,6 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Application.Commands;
+﻿namespace Ordering.API.Application.Commands;
 
-using Microsoft.eShopOnContainers.Services.Ordering.API.Extensions;
+using Ordering.API.Extensions;
 
 // Regular CommandHandler
 public class CreateOrderDraftCommandHandler

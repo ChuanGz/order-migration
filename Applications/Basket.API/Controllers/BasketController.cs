@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Basket.API.Controllers;
+﻿namespace Basket.API.Controllers;
 
 [Route("api/v1/[controller]")]
 [Authorize]

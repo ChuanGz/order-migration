@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Application.Queries;
+﻿namespace Ordering.API.Application.Queries;
 
 public record Orderitem
 {

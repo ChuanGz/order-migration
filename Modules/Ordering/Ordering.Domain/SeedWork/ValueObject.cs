@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.SeedWork;
+﻿namespace Ordering.Domain.SeedWork;
 
 public abstract class ValueObject
 {

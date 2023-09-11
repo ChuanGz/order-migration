@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.Events;
+﻿namespace Ordering.Domain.Events;
 
 public class OrderShippedDomainEvent
 {

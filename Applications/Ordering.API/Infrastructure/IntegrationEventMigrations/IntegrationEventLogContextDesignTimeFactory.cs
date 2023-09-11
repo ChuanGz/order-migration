@@ -1,4 +1,8 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Infrastructure.IntegrationEventMigrations
+﻿using Common.IntegrationEventLogEF;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+
+namespace Ordering.API.Infrastructure.IntegrationEventMigrations
 {
     public class IntegrationEventLogContextDesignTimeFactory : IDesignTimeDbContextFactory<IntegrationEventLogContext>
     {

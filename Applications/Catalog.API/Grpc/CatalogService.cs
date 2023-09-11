@@ -1,7 +1,7 @@
 ﻿using CatalogApi;
 using static CatalogApi.Catalog;
 
-namespace Microsoft.eShopOnContainers.Services.Catalog.API.Grpc;
+namespace Catalog.API.Grpc;
 
 public class CatalogService : CatalogBase
 {

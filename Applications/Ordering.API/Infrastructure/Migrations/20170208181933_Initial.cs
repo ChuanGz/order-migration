@@ -1,4 +1,7 @@
-﻿namespace Ordering.API.Migrations
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace Ordering.API.Migrations
 {
     public partial class Initial : Migration
     {

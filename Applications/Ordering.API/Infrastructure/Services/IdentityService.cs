@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Infrastructure.Services;
+﻿namespace Ordering.API.Infrastructure.Services;
 
 public class IdentityService : IIdentityService
 {

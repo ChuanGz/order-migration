@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Catalog.API.ViewModel;
+﻿namespace Catalog.API.ViewModel;
 
 public class PaginatedItemsViewModel<TEntity> where TEntity : class
 {

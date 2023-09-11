@@ -41,4 +41,9 @@
     <PackageReference Include="Polly" Version="7.2.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.EventBus\Common.EventBus.csproj" />
+    <ProjectReference Include="..\..\Common\Common.IntegrationEventLogEF\Common.IntegrationEventLogEF.csproj" />
+  </ItemGroup>
+
 </Project>

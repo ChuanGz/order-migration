@@ -1,4 +1,6 @@
-﻿namespace Ordering.API.Migrations
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace Ordering.API.Migrations
 {
     public partial class AdressAsValueObject : Migration
     {

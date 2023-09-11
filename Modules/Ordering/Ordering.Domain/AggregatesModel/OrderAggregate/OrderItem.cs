@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.OrderAggregate;
+﻿namespace Ordering.Domain.AggregatesModel.OrderAggregate;
 
 public class OrderItem
     : Entity

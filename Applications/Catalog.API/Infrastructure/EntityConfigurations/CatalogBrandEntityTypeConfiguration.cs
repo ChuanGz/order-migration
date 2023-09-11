@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Catalog.API.Infrastructure.EntityConfigurations;
+﻿namespace Catalog.API.Infrastructure.EntityConfigurations;
 
 internal class CatalogBrandEntityTypeConfiguration
     : IEntityTypeConfiguration<CatalogBrand>

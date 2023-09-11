@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Identity.API.Data.Migrations
+﻿namespace Identity.API.Data.Migrations
 {
     public partial class InitialMigration : Migration
     {

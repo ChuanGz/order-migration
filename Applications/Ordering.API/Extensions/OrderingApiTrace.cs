@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Application.DomainEventHandlers;
+﻿namespace Ordering.API.Application.DomainEventHandlers;
 
 internal static partial class OrderingApiTrace
 {

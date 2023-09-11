@@ -1,4 +1,9 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Catalog.API.IntegrationEvents;
+﻿using Common.EventBus.Abstractions;
+using Common.EventBus.Events;
+using Common.IntegrationEventLogEF.Services;
+using Common.IntegrationEventLogEF.Utilities;
+
+namespace Catalog.API.IntegrationEvents;
 
 public class CatalogIntegrationEventService : ICatalogIntegrationEventService, IDisposable
 {

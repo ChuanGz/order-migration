@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Application.IntegrationEvents;
+﻿namespace Ordering.API.Application.IntegrationEvents;
 
 public class OrderingIntegrationEventService : IOrderingIntegrationEventService
 {

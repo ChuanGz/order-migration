@@ -1,7 +1,7 @@
-﻿using CardType = Microsoft.eShopOnContainers.Services.Ordering.API.Application.Queries.CardType;
-using Order = Microsoft.eShopOnContainers.Services.Ordering.API.Application.Queries.Order;
+﻿using CardType = Ordering.API.Application.Queries.CardType;
+using Order = Ordering.API.Application.Queries.Order;
 
-namespace Microsoft.eShopOnContainers.Services.Ordering.API.Controllers;
+namespace Ordering.API.Controllers;
 
 [Route("api/v1/[controller]")]
 [Authorize]

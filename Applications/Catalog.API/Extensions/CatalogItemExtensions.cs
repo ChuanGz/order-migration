@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Catalog.API.Model;
+﻿namespace Catalog.API.Model;
 
 public static class CatalogItemExtensions
 {

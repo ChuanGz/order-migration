@@ -1,7 +1,7 @@
-﻿global using global::Microsoft.eShopOnContainers.Services.Ordering.Domain.Exceptions;
+﻿global using global::Ordering.Domain.Exceptions;
 global using MediatR;
-global using Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.BuyerAggregate;
-global using Microsoft.eShopOnContainers.Services.Ordering.Domain.AggregatesModel.OrderAggregate;
-global using Microsoft.eShopOnContainers.Services.Ordering.Domain.Events;
-global using Microsoft.eShopOnContainers.Services.Ordering.Domain.Seedwork;
+global using Ordering.Domain.AggregatesModel.BuyerAggregate;
+global using Ordering.Domain.AggregatesModel.OrderAggregate;
+global using Ordering.Domain.Events;
+global using Ordering.Domain.Seedwork;
 global using System.Reflection;

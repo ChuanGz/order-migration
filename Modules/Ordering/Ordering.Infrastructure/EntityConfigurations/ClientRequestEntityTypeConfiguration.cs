@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.EntityConfigurations;
+﻿namespace Ordering.Infrastructure.EntityConfigurations;
 
 internal class ClientRequestEntityTypeConfiguration
     : IEntityTypeConfiguration<ClientRequest>

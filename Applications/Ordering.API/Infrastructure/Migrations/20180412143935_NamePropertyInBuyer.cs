@@ -1,4 +1,6 @@
-﻿namespace Ordering.API.Infrastructure.Migrations
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace Ordering.API.Infrastructure.Migrations
 {
     public partial class NamePropertyInBuyer : Migration
     {

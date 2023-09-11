@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API;
+﻿namespace Ordering.API;
 
 public class OrderingSettings
 {

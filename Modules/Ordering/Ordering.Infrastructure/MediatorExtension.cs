@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure;
+﻿namespace Ordering.Infrastructure;
 
 internal static class MediatorExtension
 {

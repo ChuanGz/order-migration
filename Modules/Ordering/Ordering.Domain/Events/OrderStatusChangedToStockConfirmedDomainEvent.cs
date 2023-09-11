@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.Events;
+﻿namespace Ordering.Domain.Events;
 
 /// <summary>
 /// Event used when the order stock items are confirmed

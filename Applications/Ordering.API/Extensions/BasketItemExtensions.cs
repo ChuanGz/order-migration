@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Extensions;
+﻿namespace Ordering.API.Extensions;
 
 public static class BasketItemExtensions
 {

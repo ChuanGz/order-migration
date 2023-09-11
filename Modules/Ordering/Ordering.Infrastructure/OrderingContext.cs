@@ -1,13 +1,10 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure;
+﻿namespace Ordering.Infrastructure;
 
 public class OrderingContext : DbContext, IUnitOfWork
 {
     public const string DEFAULT_SCHEMA = "ordering";
     public DbSet<Order> Orders { get; set; }
     public DbSet<OrderItem> OrderItems { get; set; }
-    public DbSet<PaymentMethod> Payments { get; set; }
-    public DbSet<Buyer> Buyers { get; set; }
-    public DbSet<CardType> CardTypes { get; set; }
     public DbSet<OrderStatus> OrderStatus { get; set; }
 
     private readonly IMediator _mediator;
@@ -112,7 +109,7 @@ public class OrderingContextDesignFactory : IDesignTimeDbContextFactory<Ordering
     public OrderingContext CreateDbContext(string[] args)
     {
         var optionsBuilder = new DbContextOptionsBuilder<OrderingContext>()
-            .UseSqlServer("Server=.;Initial Catalog=Microsoft.eShopOnContainers.Services.OrderingDb;Integrated Security=true");
+            .UseSqlServer("Server=.;Initial Catalog=OrderingDb;User Id=sa;Password=Aa@123456;Encrypt=false");
 
         return new OrderingContext(optionsBuilder.Options, new NoMediator());
     }

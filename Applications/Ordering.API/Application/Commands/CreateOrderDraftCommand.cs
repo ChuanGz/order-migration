@@ -1,6 +1,6 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Application.Commands;
+﻿namespace Ordering.API.Application.Commands;
 
-using Microsoft.eShopOnContainers.Services.Ordering.API.Application.Models;
+using Ordering.API.Application.Models;
 
 public class CreateOrderDraftCommand : IRequest<OrderDraftDTO>
 {

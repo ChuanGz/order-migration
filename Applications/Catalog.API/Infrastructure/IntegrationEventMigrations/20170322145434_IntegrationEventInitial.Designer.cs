@@ -3,11 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.eShopOnContainers.BuildingBlocks.IntegrationEventLogEF;
 
 namespace Catalog.API.Migrations
 {
-    [DbContext(typeof(IntegrationEventLogContext))]
     [Migration("20170322145434_IntegrationEventInitial")]
     partial class IntegrationEventInitial
     {

@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Catalog.API.Extensions;
+﻿namespace Catalog.API.Extensions;
 
 public static class LinqSelectExtensions
 {

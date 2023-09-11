@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Identity.API.Data;
+﻿namespace Identity.API.Data;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {

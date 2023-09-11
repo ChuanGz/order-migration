@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.eShopOnContainers.Services.Catalog.API.Infrastructure;
+using Catalog.API.Infrastructure;
 
 namespace Catalog.API.Infrastructure.Migrations
 {
@@ -20,7 +20,7 @@ namespace Catalog.API.Infrastructure.Migrations
                 .HasAnnotation("SqlServer:Sequence:.catalog_type_hilo", "'catalog_type_hilo', '', '1', '10', '', '', 'Int64', 'False'")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Microsoft.eShopOnContainers.Services.Catalog.API.Infrastructure.CatalogBrand", b =>
+            modelBuilder.Entity("Catalog.API.Infrastructure.CatalogBrand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -36,7 +36,7 @@ namespace Catalog.API.Infrastructure.Migrations
                     b.ToTable("catalogbrand");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopOnContainers.Services.Catalog.API.Infrastructure.CatalogItem", b =>
+            modelBuilder.Entity("Catalog.API.Infrastructure.CatalogItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -66,7 +66,7 @@ namespace Catalog.API.Infrastructure.Migrations
                     b.ToTable("catalog");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopOnContainers.Services.Catalog.API.Infrastructure.CatalogType", b =>
+            modelBuilder.Entity("Catalog.API.Infrastructure.CatalogType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -82,14 +82,14 @@ namespace Catalog.API.Infrastructure.Migrations
                     b.ToTable("CatalogTypes");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopOnContainers.Services.Catalog.API.Infrastructure.CatalogItem", b =>
+            modelBuilder.Entity("Catalog.API.Infrastructure.CatalogItem", b =>
                 {
-                    b.HasOne("Microsoft.eShopOnContainers.Services.Catalog.API.Infrastructure.CatalogBrand", "CatalogBrand")
+                    b.HasOne("Catalog.API.Infrastructure.CatalogBrand", "CatalogBrand")
                         .WithMany()
                         .HasForeignKey("CatalogBrandId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Microsoft.eShopOnContainers.Services.Catalog.API.Infrastructure.CatalogType", "CatalogType")
+                    b.HasOne("Catalog.API.Infrastructure.CatalogType", "CatalogType")
                         .WithMany()
                         .HasForeignKey("CatalogTypeId")
                         .OnDelete(DeleteBehavior.Cascade);

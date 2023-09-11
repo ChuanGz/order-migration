@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.Domain.Seedwork;
+﻿namespace Ordering.Domain.Seedwork;
 
 public interface IUnitOfWork : IDisposable
 {

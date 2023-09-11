@@ -2,7 +2,7 @@
 using Polly;
 using Polly.Retry;
 
-namespace Microsoft.eShopOnContainers.Services.Catalog.API.Infrastructure;
+namespace Catalog.API.Infrastructure;
 
 public class CatalogContextSeed
 {

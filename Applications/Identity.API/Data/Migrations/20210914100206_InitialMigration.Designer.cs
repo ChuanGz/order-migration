@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Microsoft.eShopOnContainers.Services.Identity.API.Data;
+using Identity.API.Data;
 
-namespace Microsoft.eShopOnContainers.Services.Identity.API.Data.Migrations
+namespace Identity.API.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20210914100206_InitialMigration")]
@@ -152,7 +152,7 @@ namespace Microsoft.eShopOnContainers.Services.Identity.API.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopOnContainers.Services.Identity.API.Models.ApplicationUser", b =>
+            modelBuilder.Entity("Identity.API.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -275,7 +275,7 @@ namespace Microsoft.eShopOnContainers.Services.Identity.API.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.eShopOnContainers.Services.Identity.API.Models.ApplicationUser", null)
+                    b.HasOne("Identity.API.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -284,7 +284,7 @@ namespace Microsoft.eShopOnContainers.Services.Identity.API.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.eShopOnContainers.Services.Identity.API.Models.ApplicationUser", null)
+                    b.HasOne("Identity.API.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -299,7 +299,7 @@ namespace Microsoft.eShopOnContainers.Services.Identity.API.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.eShopOnContainers.Services.Identity.API.Models.ApplicationUser", null)
+                    b.HasOne("Identity.API.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -308,7 +308,7 @@ namespace Microsoft.eShopOnContainers.Services.Identity.API.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.eShopOnContainers.Services.Identity.API.Models.ApplicationUser", null)
+                    b.HasOne("Identity.API.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

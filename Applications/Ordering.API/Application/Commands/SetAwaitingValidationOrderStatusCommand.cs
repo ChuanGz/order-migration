@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopOnContainers.Services.Ordering.API.Application.Commands;
+﻿namespace Ordering.API.Application.Commands;
 
 public class SetAwaitingValidationOrderStatusCommand : IRequest<bool>
 {
