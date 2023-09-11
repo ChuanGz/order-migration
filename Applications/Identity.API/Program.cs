@@ -1,7 +1,5 @@
 ﻿var builder = WebApplication.CreateBuilder(args);
 
-builder.AddServiceDefaults();
-
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -39,8 +37,6 @@ builder.Services.AddTransient<ILoginService<ApplicationUser>, EFLoginService>();
 builder.Services.AddTransient<IRedirectService, RedirectService>();
 
 var app = builder.Build();
-
-app.UseServiceDefaults();
 
 app.UseStaticFiles();
 
